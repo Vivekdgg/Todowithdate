@@ -1,38 +1,92 @@
 .App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #352f5b;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 23px;
+}
+form {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+p{
+  color: #fff;
+  text-align: center;
+    font-family: cursive;
+}
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin-right: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="date"]
+{
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: #ff5945;
+  color: #fff;
+  font-size: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 23em;
+  text-align: center;
+}
+
+li {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #423a6f;
+  color: #fff;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+#text-todo
+{
+  width: 75%;
+  overflow-wrap: break-word;
+}
+li button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li button:hover {
+  background: #ff1a1a;
 }
